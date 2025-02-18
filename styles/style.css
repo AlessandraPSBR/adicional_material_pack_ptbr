@@ -1,32 +1,95 @@
 .page {
-    min-width: 1100px;
-    /* Ainda não sabemos como fazer versões móvel de sites, 
-    então aqui configuramos uma largura mínima de página */
-    max-width: 1600px;
-    /* Aqui configuramos uma largura máxima de página */
-    margin: 0 auto;
-    /* Isso garante que todo o conteúdo seja centralizado em telas maiores que 1600px */
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+  min-width: 1100px;
+  max-width: 1600px;
+  margin: 0 auto;
+  font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 .header {
-    height: 100vh;
-    min-height: 600px;
-    max-height: 756px;
-    /* Parâmetros para a seção de cabeçalho */
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: row;
+  padding: 30px 64px;
+  margin: 0;
+  position: relative;
 }
 
-/* Aqui temos dois exemplos de seletores para lembrá-lo de como 
-configurar estilos para elementos*/
-.header__square-pic {
-    height: 568px;
-    width: 568px;
+.logo {
+  display: flex;
+  height: 31px;
+  width: 154px;
+  position: absolute;
 }
 
-/*incluindo elementos com modificadores de valor-chave */
+.logo_place_header {
+  top: 30px;
+  left: 64px;
+}
+
+.header__title {
+  display: flex;
+  align-self: center;
+  width: 730px;
+  position: absolute;
+  left: 64px;
+  margin: auto;
+  font-size: 32px;
+  font-style: bold;
+  line-height: 70px;
+}
+
+.header__subtitle {
+  display: flex;
+  align-items: flex-end;
+  width: 388px;
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
+  line-height: 25px;
+  font-size: 18px;
+  font-style: normal;
+}
+
+.header__link {
+  display: flex;
+  position: absolute;
+  top: 68px;
+}
+
+.header__main-illustration {
+  display: flex;
+  width: 756px;
+  height: 608px;
+  margin-bottom: 0;
+  position: absolute;
+  right: 0px;
+  bottom: 0;
+  z-index: 1;
+}
+
+.header__square {
+  display: flex;
+  width: 568px;
+  height: 568px;
+  background-color: #2f80ed;
+  position: absolute;
+  top: 61px;
+  right: 0;
+  z-index: 0;
+}
+
+.two-columns {
+}
+
+.two-columns__brief {
+}
+
 .table__cell_theme_dark {
-    width: 200px;
-    color: white;
-    margin-right: 0;
-    margin-top: 80px;
+  width: 200px;
+  color: white;
+  margin-right: 0;
+  margin-top: 80px;
 }
